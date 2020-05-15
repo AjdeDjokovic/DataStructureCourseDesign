@@ -1,4 +1,4 @@
-## SDU Course design of data structure implemented by QT C++
+### SDU Course design of data structure implemented by QT C++
 
 #### Theme
 
@@ -18,11 +18,8 @@
 
 2. Source code, executable program in win, complete experiment report, demonstration video
 
-
-
-
-
-## 山东大学数据结构课程设计	QT C++ 实现
+***
+### 山东大学数据结构课程设计	QT C++ 实现
 #### 主题
 1. 跳表
 2. 外排序
