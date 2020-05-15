@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1115</width>
+    <height>1045</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>1051</width>
+      <height>901</height>
+     </rect>
+    </property>
+    <property name="tabsClosable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1115</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>初始化</string>
+    </property>
+    <addaction name="actFileIni"/>
+    <addaction name="actInputIni"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>插入</string>
+    </property>
+    <addaction name="actInsert"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>删除</string>
+    </property>
+    <addaction name="actDelete"/>
+    <addaction name="actDeleteNode"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>图形界面</string>
+    </property>
+    <addaction name="actOpenGrafic"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>排序界面</string>
+    </property>
+    <addaction name="actOpenSort"/>
+   </widget>
+   <widget class="QMenu" name="menu_chuan">
+    <property name="title">
+     <string>文件界面</string>
+    </property>
+    <addaction name="actOpenFile"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>重启</string>
+    </property>
+    <addaction name="actRestart"/>
+   </widget>
+   <addaction name="menu_3"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_chuan"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_9"/>
+  </widget>
+  <action name="actFileIni">
+   <property name="text">
+    <string>文件初始化</string>
+   </property>
+   <property name="toolTip">
+    <string>文件初始化</string>
+   </property>
+  </action>
+  <action name="actInputIni">
+   <property name="text">
+    <string>输入初始化</string>
+   </property>
+   <property name="toolTip">
+    <string>输入初始化</string>
+   </property>
+  </action>
+  <action name="actInsert">
+   <property name="text">
+    <string>插入字符串</string>
+   </property>
+   <property name="toolTip">
+    <string>插入字符串</string>
+   </property>
+  </action>
+  <action name="actDelete">
+   <property name="text">
+    <string>删除字典树</string>
+   </property>
+   <property name="toolTip">
+    <string>删除字典树</string>
+   </property>
+  </action>
+  <action name="actOpenGrafic">
+   <property name="text">
+    <string>打开图形化界面</string>
+   </property>
+   <property name="toolTip">
+    <string>打开图形化界面</string>
+   </property>
+  </action>
+  <action name="actOpenSort">
+   <property name="text">
+    <string>打开排序子窗口</string>
+   </property>
+   <property name="toolTip">
+    <string>打开排序子窗口</string>
+   </property>
+  </action>
+  <action name="actOpenFile">
+   <property name="text">
+    <string>打开文件界面</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件界面</string>
+   </property>
+  </action>
+  <action name="actDeleteNode">
+   <property name="text">
+    <string>删除所选节点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除所选节点</string>
+   </property>
+  </action>
+  <action name="actRestart">
+   <property name="text">
+    <string>重启程序</string>
+   </property>
+   <property name="toolTip">
+    <string>重启程序</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

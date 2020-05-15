@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>windowSort</class>
+ <widget class="QMainWindow" name="windowSort">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>711</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabChangesFocus">
+     <bool>false</bool>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+    <property name="tabStopWidth">
+     <number>240</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>排序</string>
+    </property>
+    <addaction name="actsortInsideFrequency"/>
+    <addaction name="actsortFrequency"/>
+    <addaction name="actsortTrie"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>查询</string>
+    </property>
+    <addaction name="actSearchRow"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>字体</string>
+    </property>
+    <addaction name="actFont"/>
+   </widget>
+   <addaction name="menu_3"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actsortTrie">
+   <property name="text">
+    <string>字典排序</string>
+   </property>
+   <property name="toolTip">
+    <string>字典排序</string>
+   </property>
+  </action>
+  <action name="actsortFrequency">
+   <property name="text">
+    <string>词频外排序</string>
+   </property>
+   <property name="toolTip">
+    <string>词频外排序</string>
+   </property>
+  </action>
+  <action name="actSearchRow">
+   <property name="text">
+    <string>查询单词出现行号</string>
+   </property>
+   <property name="toolTip">
+    <string>查询单词出现行号</string>
+   </property>
+  </action>
+  <action name="actsortInsideFrequency">
+   <property name="text">
+    <string>词频内排序</string>
+   </property>
+   <property name="toolTip">
+    <string>词频内排序</string>
+   </property>
+  </action>
+  <action name="actFont">
+   <property name="text">
+    <string>修改字体</string>
+   </property>
+   <property name="toolTip">
+    <string>修改字体</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

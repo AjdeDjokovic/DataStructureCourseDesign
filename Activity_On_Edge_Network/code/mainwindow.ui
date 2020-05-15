@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>706</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>831</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="plainText">
+     <string>示例测试数据：
+
+0 1 6
+0 2 4
+0 3 5
+1 4 1
+2 4 1
+3 5 2
+4 6 9
+4 7 7
+5 7 4
+7 8 4
+6 8 2
+
+
+0 1 6
+0 2 4
+0 3 5
+1 4 1
+2 4 5
+3 5 2
+4 6 9
+4 7 7
+5 7 4
+6 8 2
+7 8 4
+
+
+1 0 6
+2 0 4
+3 0 5
+4 1 1
+4 2 5
+5 3 2
+6 4 9
+7 4 7
+7 5 4
+8 6 2
+8 7 4
+
+
+3 1 1
+3 2 2
+1 0 1
+2 0 2
+
+
+1 2 5
+1 3 4
+1 4 6
+2 5 2
+3 5 1
+4 7 3
+5 7 3
+5 6 5
+6 8 4
+7 8 5
+
+
+0 1 2
+1 2 6
+1 3 4
+1 4 5
+2 5 1
+3 5 1
+4 6 2
+6 8 4
+5 7 9
+5 8 7
+8 9 4
+7 9 2	</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>870</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>初始化</string>
+    </property>
+    <addaction name="actIni"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>清除</string>
+    </property>
+    <addaction name="actClear"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>重启</string>
+    </property>
+    <addaction name="actRestart"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>示例</string>
+    </property>
+    <addaction name="actData"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actIni">
+   <property name="text">
+    <string>初始化aoe图</string>
+   </property>
+   <property name="toolTip">
+    <string>初始化aoe图</string>
+   </property>
+  </action>
+  <action name="actClear">
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除</string>
+   </property>
+  </action>
+  <action name="actRestart">
+   <property name="text">
+    <string>重启程序</string>
+   </property>
+   <property name="toolTip">
+    <string>重启程序</string>
+   </property>
+  </action>
+  <action name="actData">
+   <property name="text">
+    <string>示例测试数据</string>
+   </property>
+   <property name="toolTip">
+    <string>示例测试数据</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

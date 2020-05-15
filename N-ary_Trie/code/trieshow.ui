@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>trieShow</class>
+ <widget class="QMainWindow" name="trieShow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1391</width>
+    <height>980</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="InteractiveView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1351</width>
+      <height>901</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1391</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>聚焦</string>
+    </property>
+    <addaction name="actCentre"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>查找</string>
+    </property>
+    <addaction name="actSearch"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actCentre">
+   <property name="text">
+    <string>聚焦于所选顶点</string>
+   </property>
+   <property name="toolTip">
+    <string>聚焦于所选顶点</string>
+   </property>
+  </action>
+  <action name="actSearch">
+   <property name="text">
+    <string>查找所选节点</string>
+   </property>
+   <property name="toolTip">
+    <string>查找所选节点</string>
+   </property>
+  </action>
+  <action name="actRecover">
+   <property name="text">
+    <string>复原树的原始表示</string>
+   </property>
+   <property name="toolTip">
+    <string>复原树的原始表示</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>InteractiveView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">interactiveview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

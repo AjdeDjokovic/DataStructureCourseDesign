@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>windowFile</class>
+ <widget class="QMainWindow" name="windowFile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>851</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="tabStopWidth">
+     <number>80</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>打开文件</string>
+    </property>
+    <addaction name="actOpenFile"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>新建文件</string>
+    </property>
+    <addaction name="actNewFile"/>
+    <addaction name="actCreateFile"/>
+    <addaction name="actCreareStandard"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>保存文件</string>
+    </property>
+    <addaction name="actSaveLast"/>
+    <addaction name="actSave"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>删除文件</string>
+    </property>
+    <addaction name="actDeleteFile"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actFont"/>
+   <addaction name="actCopy"/>
+   <addaction name="actPaste"/>
+   <addaction name="actCut"/>
+   <addaction name="actClear"/>
+  </widget>
+  <action name="actOpenFile">
+   <property name="text">
+    <string>打开所选文件</string>
+   </property>
+   <property name="toolTip">
+    <string>打开所选文件</string>
+   </property>
+  </action>
+  <action name="actCreateFile">
+   <property name="text">
+    <string>随机初始化文件</string>
+   </property>
+   <property name="toolTip">
+    <string>随机初始化文件</string>
+   </property>
+  </action>
+  <action name="actCreareStandard">
+   <property name="text">
+    <string>形成接近满字典树文件</string>
+   </property>
+   <property name="toolTip">
+    <string>形成接近满字典树文件</string>
+   </property>
+  </action>
+  <action name="actNewFile">
+   <property name="text">
+    <string>新建空白文件</string>
+   </property>
+   <property name="toolTip">
+    <string>新建空白文件</string>
+   </property>
+  </action>
+  <action name="actSave">
+   <property name="text">
+    <string>选择位置保存文件</string>
+   </property>
+   <property name="toolTip">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="actCut">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="toolTip">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="actPaste">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="toolTip">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="actCopy">
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="toolTip">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="actClear">
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </action>
+  <action name="actFont">
+   <property name="text">
+    <string>字体</string>
+   </property>
+   <property name="toolTip">
+    <string>字体</string>
+   </property>
+  </action>
+  <action name="actSaveLast">
+   <property name="text">
+    <string>原位置保存文件</string>
+   </property>
+   <property name="toolTip">
+    <string>原位置保存文件</string>
+   </property>
+  </action>
+  <action name="actDeleteFile">
+   <property name="text">
+    <string>删除文件</string>
+   </property>
+   <property name="toolTip">
+    <string>删除文件</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actCut</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actPaste</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actCopy</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actClear</sender>
+   <signal>triggered()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
